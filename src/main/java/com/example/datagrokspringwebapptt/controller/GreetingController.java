@@ -19,8 +19,9 @@ public class GreetingController {
         Thread.sleep(1000);// simulated delay
         message.setLocalTime(LocalTime.now());
         return new Greeting("Hello, "
-                + HtmlUtils.htmlEscape(message.getName()) + " ! "
-                + "Your message: " + HtmlUtils.htmlEscape(message.getDialog())
+                + HtmlUtils.htmlEscape(message.getFrom()) + " ! "
+                + "Your message to: "+ HtmlUtils.htmlEscape(message.getTo())
+                + " are: " + HtmlUtils.htmlEscape(message.getDialog())
                 + ", sent at: " + message.getLocalTime().format(DateTimeFormatter.ofPattern("hh:mm:ss")));
     }
 

@@ -1,6 +1,5 @@
 package com.example.datagrokspringwebapptt.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -12,7 +11,9 @@ import java.time.LocalTime;
 @RequiredArgsConstructor
 public class HelloMessage {
 
-    private String name;
+    private String from;
+
+    private String to;
 
     private String dialog;
 
