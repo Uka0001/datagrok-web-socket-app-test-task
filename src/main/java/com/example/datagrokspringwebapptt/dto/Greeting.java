@@ -1,4 +1,4 @@
-package com.example.datagrokspringwebapptt;
+package com.example.datagrokspringwebapptt.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

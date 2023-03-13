@@ -1,4 +1,4 @@
-package com.example.datagrokspringwebapptt;
+package com.example.datagrokspringwebapptt.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;

@@ -1,5 +1,7 @@
-package com.example.datagrokspringwebapptt;
+package com.example.datagrokspringwebapptt.controller;
 
+import com.example.datagrokspringwebapptt.dto.Greeting;
+import com.example.datagrokspringwebapptt.model.HelloMessage;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
@@ -18,8 +20,8 @@ public class GreetingController {
         message.setLocalTime(LocalTime.now());
         return new Greeting("Hello, "
                 + HtmlUtils.htmlEscape(message.getName()) + " ! "
-                + "Your message: " /*+ HtmlUtils.htmlEscape(message.getDialog())*/
-                + message.getLocalTime().format(DateTimeFormatter.ofPattern("hh:mm:ss")) + " sent");
+                + "Your message: " + HtmlUtils.htmlEscape(message.getDialog())
+                + " sent at: " + message.getLocalTime().format(DateTimeFormatter.ofPattern("hh:mm:ss")));
     }
 
 }

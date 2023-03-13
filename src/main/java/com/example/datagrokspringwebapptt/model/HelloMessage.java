@@ -1,4 +1,4 @@
-package com.example.datagrokspringwebapptt;
+package com.example.datagrokspringwebapptt.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
