@@ -21,7 +21,7 @@ public class GreetingController {
         return new Greeting("Hello, "
                 + HtmlUtils.htmlEscape(message.getName()) + " ! "
                 + "Your message: " + HtmlUtils.htmlEscape(message.getDialog())
-                + " sent at: " + message.getLocalTime().format(DateTimeFormatter.ofPattern("hh:mm:ss")));
+                + ", sent at: " + message.getLocalTime().format(DateTimeFormatter.ofPattern("hh:mm:ss")));
     }
 
 }
