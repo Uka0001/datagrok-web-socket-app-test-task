@@ -14,7 +14,7 @@ to the chat using STOMP messaging sub protocol with Spring.
 Java17, Spring Boot, WebSocket, STOMP messaging, Maven, HTML, JS, CSS, Checkstyle
 
 ## 	:bricks: How to install and run the app:
-1. Clone this repo to you IDE amd open it.
+1. Clone this repo to you IDE and open it.
 2. Pull the last changes.
 3. Run DataGrokSpringWebAppTtApplication class.
 4. If everything fine - go at http://localhost:8080.
