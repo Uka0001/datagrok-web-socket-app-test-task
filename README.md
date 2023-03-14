@@ -7,8 +7,8 @@ choose receiver, change it anytime, and post any text message
 to the chat using STOMP messaging sub protocol with Spring.
 
 ## :desktop_computer: UI app view:
-![Screenshot 2023-03-14 at 12.34.10.png](..%2F..%2FScreenShots%2FScreenshot%202023-03-14%20at%2012.34.10.png)
-![Screenshot 2023-03-14 at 12.34.51.png](..%2F..%2FScreenShots%2FScreenshot%202023-03-14%20at%2012.34.51.png)
+![Screenshot 2023-03-14 at 12.34.10.png](src%2Fmain%2Fresources%2FScreenshot%202023-03-14%20at%2012.34.10.png)
+![Screenshot 2023-03-14 at 12.34.51.png](src%2Fmain%2Fresources%2FScreenshot%202023-03-14%20at%2012.34.51.png)
 
 ## :flying_saucer: Main technology stack that was used:
 Java17, Spring Boot, WebSocket, STOMP messaging, Maven, HTML, JS, CSS, Checkstyle
