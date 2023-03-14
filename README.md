@@ -1,14 +1,23 @@
-Develop a web-based chat application.
-Time: 1 week
+# :speech_balloon: Web-based chat application :speech_balloon:
 
-It should be a client-server application (or two independent applications: server and index.html file with some scripting) written in any language and hosted somewhere (localhost is OK too).
+## :green_book: Description:
+A web-based chat client-server application on Spring Boot and WebSocket where 
+User is able to choose his name, change it anytime, 
+choose receiver, change it anytime, and post any text message 
+to the chat using STOMP messaging sub protocol with Spring.
 
-User should be able to choose his name, change it anytime, and post any text message to the chat.
+## :desktop_computer: UI app view:
+![Screenshot 2023-03-14 at 12.34.10.png](..%2F..%2FScreenShots%2FScreenshot%202023-03-14%20at%2012.34.10.png)
+![Screenshot 2023-03-14 at 12.34.51.png](..%2F..%2FScreenShots%2FScreenshot%202023-03-14%20at%2012.34.51.png)
 
-Do not store messages on the server.
-Use web sockets to connect to the server and get and send messages to other users.
+## :flying_saucer: Main technology stack that was used:
+Java17, Spring Boot, WebSocket, STOMP messaging, Maven, HTML, JS, CSS, Checkstyle
 
-When you finish the task, please:
-- send a link to your GitHub repository;
-- send a link to a working chat (is optional);
-- write how much time you spent on the writing of the chat.
+## 	:bricks: How to install and run the app:
+1. Clone this repo to you IDE amd open it.
+2. Pull the last changes.
+3. Run DataGrokSpringWebAppTtApplication class.
+4. If everything fine - go at http://localhost:8080.
+5. Click connect button and insert your data and then click send button.
+
+Good luck. With :hearts: love from :ukraine: Ukraine! :smiley:

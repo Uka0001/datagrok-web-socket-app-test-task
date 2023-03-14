@@ -2,13 +2,12 @@ package com.example.datagrokspringwebapptt.controller;
 
 import com.example.datagrokspringwebapptt.dto.Greeting;
 import com.example.datagrokspringwebapptt.model.HelloMessage;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.util.HtmlUtils;
-
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
 
 @Controller
 public class GreetingController {
@@ -20,9 +19,10 @@ public class GreetingController {
         message.setLocalTime(LocalTime.now());
         return new Greeting("Hello, "
                 + HtmlUtils.htmlEscape(message.getFrom()) + " ! "
-                + "Your message to: "+ HtmlUtils.htmlEscape(message.getTo())
+                + "Your message to: " + HtmlUtils.htmlEscape(message.getTo())
                 + " are: " + HtmlUtils.htmlEscape(message.getDialog())
-                + ", sent at: " + message.getLocalTime().format(DateTimeFormatter.ofPattern("hh:mm:ss")));
+                + ", sent at: "
+                + message.getLocalTime().format(DateTimeFormatter.ofPattern("hh:mm:ss")));
     }
 
 }
